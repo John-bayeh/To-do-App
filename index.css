@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.floating-ball {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  animation: floatBall infinite ease-in-out;
+}
+
+@keyframes floatBall {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-50px) translateX(30px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.8;
+  }
+}
